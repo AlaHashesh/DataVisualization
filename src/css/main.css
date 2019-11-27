@@ -1,0 +1,135 @@
+@import "clock.css";
+
+#root {
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+#x-axis-list {
+    position: absolute;
+    top: -12px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x-axis-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20%;
+}
+
+.x-axis-line {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    width: 1px;
+    background: #ebebeb;
+    z-index: -9999999999;
+}
+
+.x-axis-title {
+    color: #ccc;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.graph1 {
+    width: 640px;
+    min-height: 480px;
+    position: relative;
+    left: 30px;
+}
+
+#bars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bar1 {
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: visible !important;
+}
+
+.bar1--content {
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+}
+
+.bar1--progress {
+    margin: 5px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: blue;
+}
+
+.bar1--details {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translate(100%, -50%);
+    color: #555;
+    min-width: 480px;
+}
+
+.graph--desc {
+    font-size: 24px;
+    position: absolute;
+    bottom: 30px;
+    right: -250px;
+    text-align: center;
+    font-family: 'GE SS Two', sans-serif;
+    z-index: 2;
+}
+
+.graph-title {
+    font-size: 24px;
+    color: #878787;
+}
+
+.graph-title span {
+    color: #0d93cf;
+    /*color: #fb1ebd;*/
+}
+
+.graph--year {
+    font-size: 80px;
+    font-weight: bold;
+    color: #878787;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.graph-information {
+    color: #aaaaaa;
+    font-size: 16px;
+}
+
+.graph-information span {
+    font-weight: bold;
+    color: #878787;
+}
+
+.en {
+    font-family: 'Montserrat', sans-serif;
+}
